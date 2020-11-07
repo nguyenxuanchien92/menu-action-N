@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int randomNumber = (int) Math.floor(Math.random()*10 +1);
-        int choice = 0;
+        int choice ;
         do{
             initChoice();
             choice = Integer.parseInt(sc.nextLine());
@@ -39,6 +39,8 @@ public class Main {
                 case 10:
                     System.out.println(10);
                     break;
+                default:
+                    System.out.println("----Your choice is wrong---- \n");
             }
         }while(true);
 
