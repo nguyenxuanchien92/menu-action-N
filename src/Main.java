@@ -3,10 +3,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        initChoice();
-        int choice = Integer.parseInt(sc.nextLine());
         int randomNumber = (int) Math.floor(Math.random()*10 +1);
+        int choice = 0;
         do{
+            initChoice();
+            choice = Integer.parseInt(sc.nextLine());
             switch (choice){
                 case 1:
                     System.out.println(1);
@@ -39,7 +40,8 @@ public class Main {
                     System.out.println(10);
                     break;
             }
-        }while(choice == randomNumber);
+        }while(true);
+
 
     }
 
